@@ -1,0 +1,77 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/all.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-black" style="overflow: visible;">
+   <div class="home position-relative">
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center" style="display: none;">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    
+    <div class="all-nav min-vh-100 position-fixed d-flex top-0" >
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="search(); closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Search</li>
+                    <li onclick=" categoriesopen()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Categories</li>
+                    <li onclick="areao(); closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Area</li>
+                    <li onclick="ingredientsopen(); closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Ingredients</li>
+                    <li onclick="contacts(); closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="navleft bg-white  d-flex flex-column align-items-center justify-content-between py-4 px-1 ">
+            <img src="../logo.png"  style="width: 50px;">
+            <i class="bars fa-solid fa-bars fa-2x " id="bars"></i>
+            
+            <div >
+              <i class="fa-solid fa-globe d-block"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+    </div>
+    <div class="search1 container">
+       <div class="row pt-3">
+        <div class="col-6"><input class="form-control " oninput="searchInputValue()" type="text" placeholder="Search by name" id="name" >
+        </div>
+        <div class="col-6"><input class="form-control "  oninput="searchInputValueLetter()" type="text" placeholder="Search by frist letter" id="letter" >
+        </div>
+       </div>
+    </div>
+    <div class="container" >
+        <div class="row pt-5 gy-4" id="card2">
+           
+
+        </div>
+
+    </div>
+   </div>
+
+
+
+
+   
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/jquery-3.7.1.min.js" ></script>
+   <script src="../js/main.js"></script>
+</body>
+</html>
+
+

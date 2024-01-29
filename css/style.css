@@ -1,0 +1,29 @@
+
+
+.layerr{
+    position: absolute;
+    top: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #ffffffc5;
+    overflow: hidden;
+    transition: all 0.5s;           
+    z-index:1;
+}
+
+.image:hover .layerr{
+    top:0px
+}
+
+.w{
+ width: 5%;   
+}
+.all-nav{
+    z-index: 99;
+    
+}
+.nav-tab{
+    background-color: black;
+    color: white;
+}
